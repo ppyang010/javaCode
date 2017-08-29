@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-hello
+hello tomcat2
+Session Id : <%= request.getSession().getId() %>
 </body>
 </html>

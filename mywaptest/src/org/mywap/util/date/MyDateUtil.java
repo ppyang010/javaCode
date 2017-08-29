@@ -12,30 +12,30 @@ import org.apache.commons.lang3.time.DateUtils;
   
 /** 
  * @ClassName:MyDateUtils 
- * @Description:åŸºäºcommons lang timeç±»çš„æ—¥æœŸæ“ä½œç±»å·¥å…·ã€‚ 
+ * @Description:»ùÓÚcommons lang timeÀàµÄÈÕÆÚ²Ù×÷Àà¹¤¾ß¡£ 
  * @Author:hankaibo 
  * @date:2013-8-18 
  * @UpdateUser:hankaibo 
- * @UpdateDate:2013-8-18 ä¸Šåˆ10:36:19 
+ * @UpdateDate:2013-8-18 ÉÏÎç10:36:19 
  * @UpdateRemark:What is modified? 
  */  
 public class MyDateUtil {  
     private final static String DATE_FORMAT = "yyyy-MM-dd";  
-    private final static String DATE_FORMAT_CN = "yyyyå¹´MMæœˆddæ—¥";  
+    private final static String DATE_FORMAT_CN = "yyyyÄêMMÔÂddÈÕ";  
     private final static String TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";  
-    private final static String TIME_FORMAT_CN = "yyyyå¹´MMæœˆddæ—¥ HH:mm:ss";  
+    private final static String TIME_FORMAT_CN = "yyyyÄêMMÔÂddÈÕ HH:mm:ss";  
     private final static String MONTH_FORMAT = "yyyy-MM";  
     private final static String DAY_FORMAT = "yyyyMMdd";  
   
     /** 
      * @Title:getMonthFirstDay 
-     * @Description: å¾—åˆ°å½“å‰æœˆçš„ç¬¬ä¸€å¤©. 
+     * @Description: µÃµ½µ±Ç°ÔÂµÄµÚÒ»Ìì. 
      * @return 
      * @return String 
      */  
     public static String getMonthFirstDay() {  
         Calendar cal = Calendar.getInstance();  
-        // æ–¹æ³•ä¸€,é»˜è®¤åªè®¾ç½®åˆ°å¹´å’Œæœˆä»½.  
+        // ·½·¨Ò»,Ä¬ÈÏÖ»ÉèÖÃµ½ÄêºÍÔÂ·İ.  
         // Calendar f = (Calendar) cal.clone();  
         // f.clear();  
         // f.set(Calendar.YEAR, cal.get(Calendar.YEAR));  
@@ -43,7 +43,7 @@ public class MyDateUtil {
         // f.set(Calendar.DAY_OF_MONTH, cal.getActualMinimum(Calendar.DATE));  
         // return DateFormatUtils.format(f, DATE_FORMAT);  
   
-        // æ–¹æ³•äºŒ.  
+        // ·½·¨¶ş.  
         cal.set(Calendar.DATE, 1);  
         return DateFormatUtils.format(cal, DATE_FORMAT);  
   
@@ -51,7 +51,7 @@ public class MyDateUtil {
   
     /** 
      * @Title:getMonthLastDay 
-     * @Description: å¾—åˆ°å½“å‰æœˆæœ€åä¸€å¤© 
+     * @Description: µÃµ½µ±Ç°ÔÂ×îºóÒ»Ìì 
      * @return 
      * @return String 
      */  
@@ -59,28 +59,28 @@ public class MyDateUtil {
         Calendar cal = Calendar.getInstance();  
         Calendar f = (Calendar) cal.clone();  
         f.clear();  
-        // æ–¹æ³•ä¸€  
+        // ·½·¨Ò»  
         // f.set(Calendar.YEAR, cal.get(Calendar.YEAR));  
         // f.set(Calendar.MONTH, cal.get(Calendar.MONTH) + 1);  
         // f.set(Calendar.MILLISECOND, -1);  
         // return DateFormatUtils.format(f, DATE_FORMAT);  
   
-        // æ–¹æ³•äºŒ  
+        // ·½·¨¶ş  
         // f.set(Calendar.YEAR, cal.get(Calendar.YEAR));  
         // f.set(Calendar.MONTH, cal.get(Calendar.MONTH));  
         // f.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DATE));  
         // return DateFormatUtils.format(f, DATE_FORMAT);  
   
-        // æ–¹æ³•ä¸‰(åŒä¸€)  
-        cal.set(Calendar.DATE, 1);// è®¾ä¸ºå½“å‰æœˆçš„1å·  
-        cal.add(Calendar.MONTH, 1);// åŠ ä¸€ä¸ªæœˆï¼Œå˜ä¸ºä¸‹æœˆçš„1å·  
-        cal.add(Calendar.DATE, -1);// å‡å»ä¸€å¤©ï¼Œå˜ä¸ºå½“æœˆæœ€åä¸€å¤©  
+        // ·½·¨Èı(Í¬Ò»)  
+        cal.set(Calendar.DATE, 1);// ÉèÎªµ±Ç°ÔÂµÄ1ºÅ  
+        cal.add(Calendar.MONTH, 1);// ¼ÓÒ»¸öÔÂ£¬±äÎªÏÂÔÂµÄ1ºÅ  
+        cal.add(Calendar.DATE, -1);// ¼õÈ¥Ò»Ìì£¬±äÎªµ±ÔÂ×îºóÒ»Ìì  
         return DateFormatUtils.format(cal, DATE_FORMAT);  
     }  
   
     /** 
      * @Title:getPreviousMonthFirst 
-     * @Description: å¾—åˆ°ä¸Šä¸ªæœˆçš„ç¬¬ä¸€å¤© 
+     * @Description: µÃµ½ÉÏ¸öÔÂµÄµÚÒ»Ìì 
      * @return 
      * @return String 
      */  
@@ -88,27 +88,27 @@ public class MyDateUtil {
         Calendar cal = Calendar.getInstance();  
         Calendar f = (Calendar) cal.clone();  
         f.clear();  
-        // æ–¹æ³•ä¸€  
+        // ·½·¨Ò»  
         // f.set(Calendar.YEAR, cal.get(Calendar.YEAR));  
         // f.set(Calendar.MONTH, cal.get(Calendar.MONTH) - 1);  
         // f.set(Calendar.DATE, 1);  
         // return DateFormatUtils.format(f, DATE_FORMAT);  
   
-        // æ–¹æ³•äºŒ  
+        // ·½·¨¶ş  
         // f.set(Calendar.YEAR, cal.get(Calendar.YEAR));  
         // f.set(Calendar.MONTH, cal.get(Calendar.MONTH) - 1);  
         // f.set(Calendar.DAY_OF_MONTH, cal.getActualMinimum(Calendar.DATE));  
         // return DateFormatUtils.format(f, DATE_FORMAT);  
   
-        // æ–¹æ³•ä¸‰(åŒä¸€)  
-        cal.set(Calendar.DATE, 1);// è®¾ä¸ºå½“å‰æœˆçš„1å·  
+        // ·½·¨Èı(Í¬Ò»)  
+        cal.set(Calendar.DATE, 1);// ÉèÎªµ±Ç°ÔÂµÄ1ºÅ  
         cal.add(Calendar.MONTH, -1);  
         return DateFormatUtils.format(cal, DATE_FORMAT);  
     }  
   
     /** 
      * @Title:getPreviousMonthEnd 
-     * @Description: å¾—åˆ°ä¸Šä¸ªæœˆæœ€åä¸€å¤© 
+     * @Description: µÃµ½ÉÏ¸öÔÂ×îºóÒ»Ìì 
      * @return 
      * @return String 
      */  
@@ -116,28 +116,28 @@ public class MyDateUtil {
         Calendar cal = Calendar.getInstance();  
         Calendar f = (Calendar) cal.clone();  
         f.clear();  
-        // æ–¹æ³•ä¸€  
+        // ·½·¨Ò»  
         // f.set(Calendar.YEAR, cal.get(Calendar.YEAR));  
         // f.set(Calendar.MONTH, cal.get(Calendar.MONTH));  
         // f.set(Calendar.MILLISECOND, -1);  
         // return DateFormatUtils.format(f, DATE_FORMAT);  
   
-        // æ–¹æ³•äºŒ  
+        // ·½·¨¶ş  
         // f.set(Calendar.YEAR, cal.get(Calendar.YEAR));  
         // f.set(Calendar.MONTH, cal.get(Calendar.MONTH) - 1);  
         // f.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DATE));  
         // return DateFormatUtils.format(f, DATE_FORMAT);  
   
-        // æ–¹æ³•ä¸‰(åŒä¸€)  
-        cal.set(Calendar.DATE, 1);// è®¾ä¸ºå½“å‰æœˆçš„1å·  
+        // ·½·¨Èı(Í¬Ò»)  
+        cal.set(Calendar.DATE, 1);// ÉèÎªµ±Ç°ÔÂµÄ1ºÅ  
         cal.add(Calendar.MONTH, 0);//  
-        cal.add(Calendar.DATE, -1);// å‡å»ä¸€å¤©ï¼Œå˜ä¸ºå½“æœˆæœ€åä¸€å¤©  
+        cal.add(Calendar.DATE, -1);// ¼õÈ¥Ò»Ìì£¬±äÎªµ±ÔÂ×îºóÒ»Ìì  
         return DateFormatUtils.format(cal, DATE_FORMAT);  
     }  
   
     /** 
      * @Title:getNextMonthFirst 
-     * @Description: å¾—åˆ°ä¸‹ä¸ªæœˆçš„ç¬¬ä¸€å¤© 
+     * @Description: µÃµ½ÏÂ¸öÔÂµÄµÚÒ»Ìì 
      * @return 
      * @return String 
      */  
@@ -145,22 +145,22 @@ public class MyDateUtil {
         Calendar cal = Calendar.getInstance();  
         Calendar f = (Calendar) cal.clone();  
         f.clear();  
-        // æ–¹æ³•ä¸€  
+        // ·½·¨Ò»  
         // f.set(Calendar.YEAR, cal.get(Calendar.YEAR));  
         // f.set(Calendar.MONTH, cal.get(Calendar.MONTH) + 1);  
         // f.set(Calendar.DATE, 1);  
         // or f.set(Calendar.DAY_OF_MONTH,cal.getActualMinimum(Calendar.DATE));  
         // return DateFormatUtils.format(f, DATE_FORMAT);  
   
-        // æ–¹æ³•äºŒ  
-        cal.set(Calendar.DATE, 1);// è®¾ä¸ºå½“å‰æœˆçš„1å·  
-        cal.add(Calendar.MONTH, +1);// åŠ ä¸€ä¸ªæœˆï¼Œå˜ä¸ºä¸‹æœˆçš„1å·  
+        // ·½·¨¶ş  
+        cal.set(Calendar.DATE, 1);// ÉèÎªµ±Ç°ÔÂµÄ1ºÅ  
+        cal.add(Calendar.MONTH, +1);// ¼ÓÒ»¸öÔÂ£¬±äÎªÏÂÔÂµÄ1ºÅ  
         return DateFormatUtils.format(cal, DATE_FORMAT);  
     }  
   
     /** 
      * @Title:getNextMonthEnd 
-     * @Description: å¾—åˆ°ä¸‹ä¸ªæœˆæœ€åä¸€å¤©ã€‚ 
+     * @Description: µÃµ½ÏÂ¸öÔÂ×îºóÒ»Ìì¡£ 
      * @return 
      * @return String 
      */  
@@ -171,16 +171,16 @@ public class MyDateUtil {
         // cal.add(Calendar.DATE, -1);  
         // return DateFormatUtils.format(cal, DATE_FORMAT);  
   
-        // æ–¹æ³•äºŒ  
-        cal.add(Calendar.MONTH, 1);// åŠ ä¸€ä¸ªæœˆ  
-        cal.set(Calendar.DATE, 1);// æŠŠæ—¥æœŸè®¾ç½®ä¸ºå½“æœˆç¬¬ä¸€å¤©  
-        cal.roll(Calendar.DATE, -1);// æ—¥æœŸå›æ»šä¸€å¤©ï¼Œä¹Ÿå°±æ˜¯æœ¬æœˆæœ€åä¸€å¤©  
+        // ·½·¨¶ş  
+        cal.add(Calendar.MONTH, 1);// ¼ÓÒ»¸öÔÂ  
+        cal.set(Calendar.DATE, 1);// °ÑÈÕÆÚÉèÖÃÎªµ±ÔÂµÚÒ»Ìì  
+        cal.roll(Calendar.DATE, -1);// ÈÕÆÚ»Ø¹öÒ»Ìì£¬Ò²¾ÍÊÇ±¾ÔÂ×îºóÒ»Ìì  
         return DateFormatUtils.format(cal, DATE_FORMAT);  
     }  
   
     /** 
      * @Title:getCurrentMonthDays 
-     * @Description: å¾—åˆ°å½“å‰æœˆçš„å¤©æ•° 
+     * @Description: µÃµ½µ±Ç°ÔÂµÄÌìÊı 
      * @return 
      * @return int 
      */  
@@ -192,7 +192,7 @@ public class MyDateUtil {
   
     /** 
      * @Title:getSpecifiedMonthDays 
-     * @Description: å¾—åˆ°æŒ‡å®šçš„æœˆä»½çš„å¤©æ•° 
+     * @Description: µÃµ½Ö¸¶¨µÄÔÂ·İµÄÌìÊı 
      * @param date 
      * @return 
      * @return int 
@@ -211,7 +211,7 @@ public class MyDateUtil {
   
     /** 
      * @Title:getCurrentDate 
-     * @Description: å¾—åˆ°å½“å‰æ—¥æœŸ 
+     * @Description: µÃµ½µ±Ç°ÈÕÆÚ 
      * @return 
      * @return String 
      */  
@@ -223,7 +223,7 @@ public class MyDateUtil {
   
     /** 
      * @Title:getCurrentTime 
-     * @Description: å¾—åˆ°å½“å‰çš„æ—¶é—´ 
+     * @Description: µÃµ½µ±Ç°µÄÊ±¼ä 
      * @return 
      * @return String 
      */  
@@ -235,7 +235,7 @@ public class MyDateUtil {
   
     /** 
      * @Title:getOffsetDate 
-     * @Description: å¾—åˆ°ä¸å½“å‰æ—¥æœŸåç§»é‡ä¸ºXçš„æ—¥æœŸã€‚ 
+     * @Description: µÃµ½Óëµ±Ç°ÈÕÆÚÆ«ÒÆÁ¿ÎªXµÄÈÕÆÚ¡£ 
      * @param offset 
      * @return 
      * @return String 
@@ -249,11 +249,11 @@ public class MyDateUtil {
   
     /** 
      * @Title:getSpecifiedOffsetDate 
-     * @Description: å¾—åˆ°ä¸æŒ‡å®šæ—¥æœŸåç§»é‡ä¸ºXçš„æ—¥æœŸã€‚ 
-     * @param specifiedDateæŒ‡å®šçš„æ—¥æœŸ 
-     *            ,æ ¼å¼ä¸ºYYYY-MM-DD 
+     * @Description: µÃµ½ÓëÖ¸¶¨ÈÕÆÚÆ«ÒÆÁ¿ÎªXµÄÈÕÆÚ¡£ 
+     * @param specifiedDateÖ¸¶¨µÄÈÕÆÚ 
+     *            ,¸ñÊ½ÎªYYYY-MM-DD 
      * @param offset 
-     * @return è¿”å›yyyy-MM-ddæ ¼å¼çš„å­—ç¬¦ä¸²æ—¥æœŸ 
+     * @return ·µ»Øyyyy-MM-dd¸ñÊ½µÄ×Ö·û´®ÈÕÆÚ 
      * @return String 
      * @throws ParseException 
      */  
@@ -267,12 +267,12 @@ public class MyDateUtil {
   
     /** 
      * @Title:getSpecifiedOffsetTime 
-     * @Description: å¾—åˆ°ä¸æŒ‡å®šæ—¥æœŸæ—¶é—´åç§»é‡ä¸ºXçš„æ—¶é—´ã€‚ 
+     * @Description: µÃµ½ÓëÖ¸¶¨ÈÕÆÚÊ±¼äÆ«ÒÆÁ¿ÎªXµÄÊ±¼ä¡£ 
      * @param specifiedTime 
-     *            æŒ‡å®šçš„æ—¶é—´,æ ¼å¼ä¸ºyyyy-MM-dd HH:mm:ss 
+     *            Ö¸¶¨µÄÊ±¼ä,¸ñÊ½Îªyyyy-MM-dd HH:mm:ss 
      * @param offset 
-     *            åç§»å¤©æ•° 
-     * @return è¿”å›yyyy-MM-dd HH:mm:ssæ ¼å¼çš„å­—ç¬¦ä¸²æ—¶é—´ 
+     *            Æ«ÒÆÌìÊı 
+     * @return ·µ»Øyyyy-MM-dd HH:mm:ss¸ñÊ½µÄ×Ö·û´®Ê±¼ä 
      * @throws ParseException 
      * @return String 
      */  
@@ -286,11 +286,11 @@ public class MyDateUtil {
   
     /** 
      * @Title:getOffsetDateTime 
-     * @Description: å¾—åˆ°ä¸æŒ‡å®šæ—¥æœŸæ—¶é—´åç§»é‡ä¸ºXçš„æ—¶é—´ã€‚ 
+     * @Description: µÃµ½ÓëÖ¸¶¨ÈÕÆÚÊ±¼äÆ«ÒÆÁ¿ÎªXµÄÊ±¼ä¡£ 
      * @param specifiedDateTime 
-     *            æŒ‡å®šçš„æ—¶é—´,æ ¼å¼ä¸ºyyyy-MM-dd HH:mm:ss/yyyy-MM-dd 
+     *            Ö¸¶¨µÄÊ±¼ä,¸ñÊ½Îªyyyy-MM-dd HH:mm:ss/yyyy-MM-dd 
      * @param offset 
-     *            åç§»å¤©æ•° 
+     *            Æ«ÒÆÌìÊı 
      * @return 
      * @throws ParseException 
      * @return String 
@@ -305,7 +305,7 @@ public class MyDateUtil {
     }  
   
     /** 
-     * åˆ¤æ–­æ˜¯å¦ä¸ºæ¶¦å¹´ 
+     * ÅĞ¶ÏÊÇ·ñÎªÈóÄê 
      *  
      * @param year 
      * @return 
@@ -316,40 +316,40 @@ public class MyDateUtil {
   
     /** 
      * @Title:getWeekDay 
-     * @Description: åˆ¤æ–­æ˜¯æ˜ŸæœŸå‡ . 
+     * @Description: ÅĞ¶ÏÊÇĞÇÆÚ¼¸. 
      * @param c 
      * @return 
      * @return String 
      */  
     public static String getWeekDay(Calendar c) {  
         if (c == null) {  
-            return "æ˜ŸæœŸä¸€";  
+            return "ĞÇÆÚÒ»";  
         }  
         switch (c.get(Calendar.DAY_OF_WEEK)) {  
         case Calendar.MONDAY:  
-            return "æ˜ŸæœŸä¸€";  
+            return "ĞÇÆÚÒ»";  
         case Calendar.TUESDAY:  
-            return "æ˜ŸæœŸäºŒ";  
+            return "ĞÇÆÚ¶ş";  
         case Calendar.WEDNESDAY:  
-            return "æ˜ŸæœŸä¸‰";  
+            return "ĞÇÆÚÈı";  
         case Calendar.THURSDAY:  
-            return "æ˜ŸæœŸå››";  
+            return "ĞÇÆÚËÄ";  
         case Calendar.FRIDAY:  
-            return "æ˜ŸæœŸäº”";  
+            return "ĞÇÆÚÎå";  
         case Calendar.SATURDAY:  
-            return "æ˜ŸæœŸå…­";  
+            return "ĞÇÆÚÁù";  
         default:  
-            return "æ˜ŸæœŸæ—¥";  
+            return "ĞÇÆÚÈÕ";  
         }  
     }  
   
     /** 
      * @Title:getDaysListBetweenDates 
-     * @Description: è·å¾—ä¸¤ä¸ªæ—¥æœŸä¹‹é—´çš„è¿ç»­æ—¥æœŸ. 
+     * @Description: »ñµÃÁ½¸öÈÕÆÚÖ®¼äµÄÁ¬ĞøÈÕÆÚ. 
      * @param begin 
-     *            å¼€å§‹æ—¥æœŸ . 
+     *            ¿ªÊ¼ÈÕÆÚ . 
      * @param end 
-     *            ç»“æŸæ—¥æœŸ . 
+     *            ½áÊøÈÕÆÚ . 
      * @return 
      * @return List<String> 
      */  
@@ -375,7 +375,7 @@ public class MyDateUtil {
   
     /** 
      * @Title:getMonthsListBetweenDates 
-     * @Description: è·å¾—è¿ç»­çš„æœˆä»½ 
+     * @Description: »ñµÃÁ¬ĞøµÄÔÂ·İ 
      * @param begin 
      * @param end 
      * @return 
@@ -403,7 +403,7 @@ public class MyDateUtil {
   
     /** 
      * @Title:long2Time 
-     * @Description: å°†longç±»å‹çš„æ—¶é—´å€¼è½¬æ¢æˆæ ‡å‡†æ ¼å¼çš„æ—¶é—´ï¼ˆyyyy-MM-dd HH:mm:ssï¼‰ 
+     * @Description: ½«longÀàĞÍµÄÊ±¼äÖµ×ª»»³É±ê×¼¸ñÊ½µÄÊ±¼ä£¨yyyy-MM-dd HH:mm:ss£© 
      * @param createTime 
      * @return 
      * @return String 

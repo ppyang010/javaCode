@@ -20,8 +20,8 @@ import org.apache.log4j.Logger;
 
 /**
  * 
- * @see [ç›¸å…³ç±»/æ–¹æ³•]
- * @since [äº§å“/æ¨¡å—ç‰ˆæœ¬]
+ * @see [Ïà¹ØÀà/·½·¨]
+ * @since [²úÆ·/Ä£¿é°æ±¾]
  */
 public class StringTools
 {
@@ -38,10 +38,10 @@ public class StringTools
     }
 
     /**
-     * getLength è¿”å›å­—ç¬¦ä¸²çš„é•¿åº¦
+     * getLength ·µ»Ø×Ö·û´®µÄ³¤¶È
      * 
-     * @param src è¾“å…¥å­—ç¬¦ä¸²
-     * @return int å­—ç¬¦ä¸²é•¿åº¦
+     * @param src ÊäÈë×Ö·û´®
+     * @return int ×Ö·û´®³¤¶È
      * 
      */
 
@@ -59,9 +59,9 @@ public class StringTools
     }
 
     /**
-     * getLength è¿”å›éç©ºå­—ç¬¦ä¸²
+     * getLength ·µ»Ø·Ç¿Õ×Ö·û´®
      * 
-     * @param o è¾“å…¥å¯¹è±¡
+     * @param o ÊäÈë¶ÔÏó
      * @return string
      * 
      */
@@ -71,9 +71,9 @@ public class StringTools
     }
 
     /**
-     * replace$ è¿”å›å­—ç¬¦ä¸²ï¼Œå°†ä¸€ä¸ª$æ›´æ”¹ä¸ºä¸¤ä¸ª$
+     * replace$ ·µ»Ø×Ö·û´®£¬½«Ò»¸ö$¸ü¸ÄÎªÁ½¸ö$
      * 
-     * @param instr è¾“å…¥å­—ç¬¦ä¸²
+     * @param instr ÊäÈë×Ö·û´®
      * @return String
      */
     public static String replace$(String instr)
@@ -92,17 +92,17 @@ public class StringTools
      * 
      * @param value
      * @param params
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String getMsg(String value, Object[] params)
     {
         try
         {
-            // æ ¼å¼åŒ–æ•°æ®
+            // ¸ñÊ½»¯Êı¾İ
             return MessageFormat.format(value, params);
         }
         catch (Exception ex)
@@ -112,15 +112,15 @@ public class StringTools
     }
 
     /**
-     * åˆ†
+     * ·Ö
      * 
      * @param s
      * @param def
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String fenToYuan(String s, float def)
     {
@@ -146,15 +146,15 @@ public class StringTools
     }
 
     /**
-     * å…ƒè½¬åˆ†
+     * Ôª×ª·Ö
      * 
      * @param s
      * @param def
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return float [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return float [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static int yuanToFen(String s, int def)
     {
@@ -177,11 +177,11 @@ public class StringTools
      * 
      * @param s
      * @param def
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return float [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return float [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static float toFloat(String s, float def)
     {
@@ -199,15 +199,15 @@ public class StringTools
     }
 
     /**
-     * String to int <åŠŸèƒ½è¯¦ç»†æè¿°>
+     * String to int <¹¦ÄÜÏêÏ¸ÃèÊö>
      * 
      * @param s
      * @param def
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return int [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return int [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static int toInt(String s, int def)
     {
@@ -226,15 +226,15 @@ public class StringTools
     }
 
     /**
-     * String to Long <åŠŸèƒ½è¯¦ç»†æè¿°>
+     * String to Long <¹¦ÄÜÏêÏ¸ÃèÊö>
      * 
      * @param s
      * @param def
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return int [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return int [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static Long toLong(String s, long def)
     {
@@ -253,7 +253,7 @@ public class StringTools
     }
 
     /**
-     * å¶é¢æ˜¾ç¤ºæ—¶å¯¹ç‰¹æ®Šå­—ç¬¦è¿›è¡Œè½¬æ¢
+     * Ò¶ÃæÏÔÊ¾Ê±¶ÔÌØÊâ×Ö·û½øĞĞ×ª»»
      * 
      * @param String
      * @return string
@@ -269,14 +269,14 @@ public class StringTools
     }
 
     /**
-     * ç‰¹æ®Šå­—ç¬¦è½¬ä¹‰ï¼Œæ–‡æœ¬è½¬ä¸ºhtml
+     * ÌØÊâ×Ö·û×ªÒå£¬ÎÄ±¾×ªÎªhtml
      * 
      * @param text
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String text2Html(String text)
     {
@@ -289,14 +289,14 @@ public class StringTools
     }
 
     /**
-     * ä¸ºwmlï¼ˆwap1.0ï¼‰çš„ç‰¹æ®Šå­—ç¬¦è¿›è¡Œè½¬ä¹‰
+     * Îªwml£¨wap1.0£©µÄÌØÊâ×Ö·û½øĞĞ×ªÒå
      * 
      * @param text
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String escForWml(String text)
     {
@@ -305,12 +305,12 @@ public class StringTools
     }
 
     /**
-     * æŸ¥æ‰¾æ›¿æ¢å­—ç¬¦ä¸²ä¸­çš„å­ä¸²ã€‚
+     * ²éÕÒÌæ»»×Ö·û´®ÖĞµÄ×Ó´®¡£
      * 
-     * @param text å¾…å¤„ç†å­—ç¬¦ä¸²ã€‚
-     * @param find å¾…æ›¿æ¢çš„å­ä¸²ã€‚
-     * @param replace æ›¿æ¢æˆçš„å­ä¸²ã€‚
-     * @return è¿”å›textæ›¿æ¢åçš„ç»“æœã€‚
+     * @param text ´ı´¦Àí×Ö·û´®¡£
+     * @param find ´ıÌæ»»µÄ×Ó´®¡£
+     * @param replace Ìæ»»³ÉµÄ×Ó´®¡£
+     * @return ·µ»ØtextÌæ»»ºóµÄ½á¹û¡£
      */
     public static String replace(String text, String find, String replace)
     {
@@ -325,8 +325,8 @@ public class StringTools
             return text;
         }
         StringBuffer sb = new StringBuffer(256);
-        int begin = 0; // ä¸‹æ¬¡æ£€ç´¢å¼€å§‹çš„ä½ç½®
-        int i = text.indexOf(find); // æ‰¾åˆ°çš„å­ä¸²ä½ç½®
+        int begin = 0; // ÏÂ´Î¼ìË÷¿ªÊ¼µÄÎ»ÖÃ
+        int i = text.indexOf(find); // ÕÒµ½µÄ×Ó´®Î»ÖÃ
         while (i != -1)
         {
             sb.append(text.substring(begin, i));
@@ -342,14 +342,14 @@ public class StringTools
     }
 
     /**
-     * å»æ‰ä¸¤ä½çš„æ‰“æŠ˜æ•°å­—çš„æœ«ä½0
+     * È¥µôÁ½Î»µÄ´òÕÛÊı×ÖµÄÄ©Î»0
      * 
      * @param discount
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String convertDiscount(String discount)
     {
@@ -368,7 +368,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸ºnullå¯¹è±¡æˆ–æ˜¯ç©ºç™½å­—ç¬¦
+     * ÅĞ¶Ï×Ö·û´®ÊÇ·ñÎªnull¶ÔÏó»òÊÇ¿Õ°××Ö·û
      */
     public static boolean isEmpty(String str)
     {
@@ -376,7 +376,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦buä¸ºnullå¯¹è±¡æˆ–æ˜¯ç©ºç™½å­—ç¬¦
+     * ÅĞ¶Ï×Ö·û´®ÊÇ·ñbuÎªnull¶ÔÏó»òÊÇ¿Õ°××Ö·û
      */
     public static boolean isNotEmpty(String str)
     {
@@ -384,15 +384,15 @@ public class StringTools
     }
 
     /**
-     * å°†å­—ç¬¦ä¸²é€šè¿‡ åˆ†éš”ç¬¦è½¬æ¢ä¸ºé›†åˆ
+     * ½«×Ö·û´®Í¨¹ı ·Ö¸ô·û×ª»»Îª¼¯ºÏ
      * 
-     * @param collection éœ€è¦å­˜æ”¾çš„é›†åˆ
-     * @param str å­—ç¬¦ä¸²
-     * @param splitStr åˆ†éš”ç¬¦
+     * @param collection ĞèÒª´æ·ÅµÄ¼¯ºÏ
+     * @param str ×Ö·û´®
+     * @param splitStr ·Ö¸ô·û
      * 
-     * @return Collection [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return Collection [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static Collection<String> toCollection(Collection<String> collection, String str, String splitStr)
     {
@@ -409,7 +409,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦æ˜¯æ•°å­—
+     * ÅĞ¶Ï×Ö·û´®ÊÇ·ñÊÇÊı×Ö
      */
     public static boolean isDigtial(String str)
     {
@@ -421,7 +421,7 @@ public class StringTools
     }
 
     /**
-     * æ›¿æ¢åæ–œçº¿"\"ä¸ºæ–œçº¿"/"
+     * Ìæ»»·´Ğ±Ïß"\"ÎªĞ±Ïß"/"
      */
     public static String replaceBacklash(String str)
     {
@@ -436,7 +436,7 @@ public class StringTools
     }
 
     /**
-     * å–å­ä¸²
+     * È¡×Ó´®
      */
     public static String subString(String str, int begin, int end)
     {
@@ -451,7 +451,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸å…¶åé¢æŸä¸ªå‚æ•°ç›¸ç­‰
+     * ÅĞ¶Ï×Ö·û´®ÊÇ·ñÓëÆäºóÃæÄ³¸ö²ÎÊıÏàµÈ
      */
     public static boolean matchs(String base, String... matched)
     {
@@ -466,7 +466,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸æ•°ç»„ä¸­çš„æŸä¸ªå‚æ•°ç›¸ç­‰
+     * ÅĞ¶Ï×Ö·û´®ÊÇ·ñÓëÊı×éÖĞµÄÄ³¸ö²ÎÊıÏàµÈ
      */
     public static boolean matches(String base, String[] matches)
     {
@@ -488,39 +488,39 @@ public class StringTools
     }
 
     /**
-     * åˆ é™¤æœ«å°¾çš„ç©ºæ ¼ï¼Œå¹¶å°†å…¨è§’ç©ºæ ¼æ›¿æ¢ä¸º&nbsp <åŠŸèƒ½è¯¦ç»†æè¿°>
+     * É¾³ıÄ©Î²µÄ¿Õ¸ñ£¬²¢½«È«½Ç¿Õ¸ñÌæ»»Îª&nbsp <¹¦ÄÜÏêÏ¸ÃèÊö>
      * 
      * @param str
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String replaceFullSpaceToNbsp(String str)
     {
-        // å¦‚æœstrå…¨éƒ¨ç”±ç©ºæ ¼(åŒ…æ‹¬å…¨è§’ç©ºæ ¼)ç»„æˆ
-        if (isEmpty(str) || isEmpty(str.replace("ã€€", "").trim()))
+        // Èç¹ûstrÈ«²¿ÓÉ¿Õ¸ñ(°üÀ¨È«½Ç¿Õ¸ñ)×é³É
+        if (isEmpty(str) || isEmpty(str.replace("¡¡", "").trim()))
         {
             return "";
         }
 
         str = str.trim();
-        // åˆ é™¤æœ«å°¾çš„å…¨è§’ç©ºæ ¼,\\u3000æ˜¯å…¨è§’ç©ºæ ¼çš„ASCç 
+        // É¾³ıÄ©Î²µÄÈ«½Ç¿Õ¸ñ,\\u3000ÊÇÈ«½Ç¿Õ¸ñµÄASCÂë
         str = str.replaceAll("[\u3000]+$", "");
 
         return str.replace("\u3000", "&nbsp;&nbsp;");
     }
 
     /**
-     * <ä¸€å¥è¯åŠŸèƒ½ç®€è¿°> è·å–ç”¨æˆ·è‡ªå®šä¹‰é”šæ–‡æè¿° <åŠŸèƒ½è¯¦ç»†æè¿°>
+     * <Ò»¾ä»°¹¦ÄÜ¼òÊö> »ñÈ¡ÓÃ»§×Ô¶¨ÒåÃªÎÄÃèÊö <¹¦ÄÜÏêÏ¸ÃèÊö>
      * 
      * @param rule
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String getUserDefinedName(String rule)
     {
@@ -533,10 +533,10 @@ public class StringTools
     }
 
     /**
-     * è‹¥nullå¯¹è±¡æˆ–æ˜¯ç©ºç™½å­—ç¬¦ï¼Œè¿”å›é»˜è®¤å€¼ï¼Œå¦åˆ™å…¶trimç»“æœ
+     * Èônull¶ÔÏó»òÊÇ¿Õ°××Ö·û£¬·µ»ØÄ¬ÈÏÖµ£¬·ñÔòÆätrim½á¹û
      * 
      * @param str
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      */
     public static String getTrim(String str, String def)
     {
@@ -550,10 +550,10 @@ public class StringTools
     }
 
     /**
-     * æˆªå–å­—ç¬¦ä¸²(è·å–åˆ°åŠä¸ªä¸­æ–‡æ—¶ï¼Œå–å…¨)
+     * ½ØÈ¡×Ö·û´®(»ñÈ¡µ½°ë¸öÖĞÎÄÊ±£¬È¡È«)
      * 
      * @param str
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      */
     public static String getStrBylength(String str, int len, String des)
     {
@@ -597,19 +597,19 @@ public class StringTools
     }
 
     /**
-     * å­—ç¬¦ä¸²æŒ‰å­—èŠ‚æˆªå–ï¼ˆè·å–åˆ°åŠä¸ªä¸­æ–‡æ—¶ï¼ŒæŠ›å¼ƒè¯¥ä¸­æ–‡ï¼‰
+     * ×Ö·û´®°´×Ö½Ú½ØÈ¡£¨»ñÈ¡µ½°ë¸öÖĞÎÄÊ±£¬Å×Æú¸ÃÖĞÎÄ£©
      * 
-     * å½“åŸå­—ç¬¦ä¸²æ¯”æˆªå–çš„é•¿åº¦è¦çŸ­æˆ–ç›¸ç­‰æ—¶ï¼Œè¿”å›åŸå­—ç¬¦ä¸² å½“éœ€è¦æˆªå–å­—ç¬¦ä¸²æ—¶ï¼Œå¦‚æœçœç•¥ç¬¦å·é•¿åº¦å¤§äºè¦æˆªå–çš„é•¿åº¦æ—¶ï¼Œå°†è¿”å›ç©ºå€¼ å¦‚æœæˆªå–åçš„å†…å®¹ä¸ºç©ºï¼Œé‚£ä¹ˆä¹Ÿè¿”å›ç©ºå€¼ï¼Œä¸æºå¸¦çœç•¥å·
-     * å¦‚æœæˆªå–çš„æ˜¯æ±‰å­—ï¼Œå¦‚æœåªèƒ½æˆªå–åˆ°åŠä¸ªæ±‰å­—ï¼Œåˆ™å°†ä¸è·å–è¯¥æ±‰å­—å­—ç¬¦
+     * µ±Ô­×Ö·û´®±È½ØÈ¡µÄ³¤¶ÈÒª¶Ì»òÏàµÈÊ±£¬·µ»ØÔ­×Ö·û´® µ±ĞèÒª½ØÈ¡×Ö·û´®Ê±£¬Èç¹ûÊ¡ÂÔ·ûºÅ³¤¶È´óÓÚÒª½ØÈ¡µÄ³¤¶ÈÊ±£¬½«·µ»Ø¿ÕÖµ Èç¹û½ØÈ¡ºóµÄÄÚÈİÎª¿Õ£¬ÄÇÃ´Ò²·µ»Ø¿ÕÖµ£¬²»Ğ¯´øÊ¡ÂÔºÅ
+     * Èç¹û½ØÈ¡µÄÊÇºº×Ö£¬Èç¹ûÖ»ÄÜ½ØÈ¡µ½°ë¸öºº×Ö£¬Ôò½«²»»ñÈ¡¸Ãºº×Ö×Ö·û
      * 
-     * @param str è¦æˆªå–çš„å­—ç¬¦ä¸²
-     * @param len æˆªå–çš„é•¿åº¦
-     * @param elide çœç•¥å·
-     * @return [å‚æ•°è¯´æ˜]
+     * @param str Òª½ØÈ¡µÄ×Ö·û´®
+     * @param len ½ØÈ¡µÄ³¤¶È
+     * @param elide Ê¡ÂÔºÅ
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String getStrByLengthForShort(String str, int len, String elide)
     {
@@ -632,11 +632,11 @@ public class StringTools
         int strLen = strByte.length;
 
         if (len >= strLen)
-        { // ä¸éœ€è¦ç”¨åˆ°çœç•¥å·
+        { // ²»ĞèÒªÓÃµ½Ê¡ÂÔºÅ
             return str;
         }
 
-        // éœ€è¦ç”¨åˆ°çœç•¥å·
+        // ĞèÒªÓÃµ½Ê¡ÂÔºÅ
         elide = elide == null ? "" : elide;
         int elideLen = 0;
         try
@@ -654,7 +654,7 @@ public class StringTools
         }
         len = len - elideLen;
 
-        // æˆªå–æ—¶ï¼Œæ¶‰åŠåˆ°çš„æ±‰å­—æ•°ç›®(ä¸€ä¸ªæ±‰å­—å 2ä¸ª)
+        // ½ØÈ¡Ê±£¬Éæ¼°µ½µÄºº×ÖÊıÄ¿(Ò»¸öºº×ÖÕ¼2¸ö)
         int count = 0;
         for (int i = 0; i < len; i++)
         {
@@ -688,14 +688,14 @@ public class StringTools
 
     // add by tianli 00165293 for IRD-21626 begin
     /**
-     * ç”¨æ—¶é—´æ ¼å¼å­—ç¬¦ä¸²dateä¸­çš„æ—¶é—´æ›¿æ¢desä¸­çš„yyyy MM ddï¼ˆå¦‚æœå­˜åœ¨çš„è¯ï¼‰
+     * ÓÃÊ±¼ä¸ñÊ½×Ö·û´®dateÖĞµÄÊ±¼äÌæ»»desÖĞµÄyyyy MM dd£¨Èç¹û´æÔÚµÄ»°£©
      * 
      * @param str
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      */
     public static String replaceStringWithDate(String des, String date)
     {
-        // modified by tianli for IRD-21827 begin:æ—¥æœŸæ ¼å¼å°æ—¶åº”è¯¥ä¸ºHHè€Œä¸æ˜¯hh
+        // modified by tianli for IRD-21827 begin:ÈÕÆÚ¸ñÊ½Ğ¡Ê±Ó¦¸ÃÎªHH¶ø²»ÊÇhh
         String temp = des;
         if (-1 != temp.indexOf("yy") && -1 == temp.indexOf("yyyy"))
         {
@@ -718,15 +718,15 @@ public class StringTools
     }
 
     /**
-     * <ä¸€å¥è¯åŠŸèƒ½ç®€è¿°> <åŠŸèƒ½è¯¦ç»†æè¿°>
+     * <Ò»¾ä»°¹¦ÄÜ¼òÊö> <¹¦ÄÜÏêÏ¸ÃèÊö>
      * 
      * @param target
      * @param partStr
-     * @param replaceMent [å‚æ•°è¯´æ˜]
+     * @param replaceMent [²ÎÊıËµÃ÷]
      * 
-     * @return void [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return void [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String modifyDesc(String target, String partStr, String replaceMent)
     {
@@ -740,7 +740,7 @@ public class StringTools
     /** added by zhaoxinwei zKF40547 at 2012-5-9 for REQ-1116 end */
 
     /**
-     * åˆ é™¤å°æ•°ç‚¹åé¢çš„0,ä¾‹å¦‚ï¼š5.40 -> 5.4 ; 5.00->5 ; 5.04 ä¸å˜
+     * É¾³ıĞ¡ÊıµãºóÃæµÄ0,ÀıÈç£º5.40 -> 5.4 ; 5.00->5 ; 5.04 ²»±ä
      */
     public static String removeZeroAfterDecimalPoint(String data)
     {
@@ -751,14 +751,14 @@ public class StringTools
 
     /** added by luojianjun lKF66515 at 2012-6-29 for REQ-1333 begin */
     /**
-     * å¦‚æœurlå‰ä¸å¸¦http://åˆ™åŠ ä¸Š <åŠŸèƒ½è¯¦ç»†æè¿°>
+     * Èç¹ûurlÇ°²»´øhttp://Ôò¼ÓÉÏ <¹¦ÄÜÏêÏ¸ÃèÊö>
      * 
      * @param url
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String getHttpUrl(String url)
     {
@@ -779,11 +779,11 @@ public class StringTools
     }
 
     /**
-     ** <ä¸€å¥è¯åŠŸèƒ½ç®€è¿°>ä»¥é»˜è®¤å­—ç¬¦ä¸²ä»£æ›¿å·²æœ‰å­—ç¬¦ä¸²<åŠŸèƒ½è¯¦ç»†æè¿°>
+     ** <Ò»¾ä»°¹¦ÄÜ¼òÊö>ÒÔÄ¬ÈÏ×Ö·û´®´úÌæÒÑÓĞ×Ö·û´®<¹¦ÄÜÏêÏ¸ÃèÊö>
      * 
-     * @param tempStr ç›®æ ‡å­—ç¬¦ä¸²
-     * @param def é»˜è®¤å­—ç¬¦ä¸²
-     * @return [å‚æ•°è¯´æ˜]
+     * @param tempStr Ä¿±ê×Ö·û´®
+     * @param def Ä¬ÈÏ×Ö·û´®
+     * @return [²ÎÊıËµÃ÷]
      */
     public static String nvl2(String tempStr, String def)
     {
@@ -800,11 +800,11 @@ public class StringTools
     // added by hejiahuan hKF74045 at Jun 27, 2012 for REQ-555 end
 
     /**
-     * æˆªå–è¯·æ±‚ä¸­serveråœ°å€ <åŠŸèƒ½è¯¦ç»†æè¿°>
+     * ½ØÈ¡ÇëÇóÖĞserverµØÖ· <¹¦ÄÜÏêÏ¸ÃèÊö>
      * 
      * @param url
      * @return
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String cutServerIp(String url)
     {
@@ -824,7 +824,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä»¥æ ‡ç‚¹ç¬¦å·ç»“å°¾ï¼ˆå¥å·ã€é€—å·ã€åˆ†å·ã€å¹å·ã€é¡¿å·ï¼‰
+     * ÅĞ¶Ï×Ö·û´®ÊÇ·ñÒÔ±êµã·ûºÅ½áÎ²£¨¾äºÅ¡¢¶ººÅ¡¢·ÖºÅ¡¢Ì¾ºÅ¡¢¶ÙºÅ£©
      */
     public static boolean endWithPunctuation(String str)
     {
@@ -833,12 +833,12 @@ public class StringTools
             return false;
         }
 
-        return str.endsWith("ã€‚") || str.endsWith(".") || str.endsWith("ï¼Œ") || str.endsWith(",") || str.endsWith("ï¼›")
-            || str.endsWith(";") || str.endsWith("!") || str.endsWith("ï¼") || str.endsWith("ã€");
+        return str.endsWith("¡£") || str.endsWith(".") || str.endsWith("£¬") || str.endsWith(",") || str.endsWith("£»")
+            || str.endsWith(";") || str.endsWith("!") || str.endsWith("£¡") || str.endsWith("¡¢");
     }
 
     /**
-     * å­—ç¬¦ä¸²ä¸ºç©ºä½¿ç”¨é»˜è®¤å€¼
+     * ×Ö·û´®Îª¿ÕÊ¹ÓÃÄ¬ÈÏÖµ
      */
     public static String asDefault(String oldStr, String def)
     {
@@ -850,14 +850,14 @@ public class StringTools
     }
 
     /**
-     * å¯¹è¾“å…¥å­—ç¬¦ä¸²è¿›è¡ŒURLç¼–ç 
+     * ¶ÔÊäÈë×Ö·û´®½øĞĞURL±àÂë
      * 
      * @param input
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String encode(String input)
     {
@@ -875,14 +875,14 @@ public class StringTools
     }
 
     /**
-     * å¯¹è¾“å…¥å­—ç¬¦ä¸²è¿›è¡ŒURLè§£ç 
+     * ¶ÔÊäÈë×Ö·û´®½øĞĞURL½âÂë
      * 
      * @param input
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return String [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return String [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String decode(String input)
     {
@@ -900,10 +900,10 @@ public class StringTools
     }
 
     /**
-     * å…è®¸nullå¯¹è±¡çš„trimæ–¹æ³•
+     * ÔÊĞínull¶ÔÏóµÄtrim·½·¨
      * 
      * @param str
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      */
     public static String trim(String str)
     {
@@ -911,7 +911,7 @@ public class StringTools
     }
 
     /**
-     * å°†å­—ç¬¦ä¸²è½¬æ¢æˆæ—¥æœŸå½¢ å‚æ•°ï¼štimeï¼ŒStringï¼Œæ—¥æœŸå­—ç¬¦ä¸² pattern, String, è§£æçš„æ ¼å¼ è¿”å›ï¼šDateï¼Œæ—¥æœŸå½¢
+     * ½«×Ö·û´®×ª»»³ÉÈÕÆÚĞÎ ²ÎÊı£ºtime£¬String£¬ÈÕÆÚ×Ö·û´® pattern, String, ½âÎöµÄ¸ñÊ½ ·µ»Ø£ºDate£¬ÈÕÆÚĞÎ
      */
     public static Date timeStr2Date(String time, String pattern)
     {
@@ -935,7 +935,7 @@ public class StringTools
     }
 
     /**
-     * å°†æ—¥æœŸå‹è½¬æ¢æˆå­—ç¬¦ä¸² å‚æ•°ï¼štimeï¼ŒDate pattern, String, è½¬æ¢çš„ç›®æ ‡æ ¼å¼
+     * ½«ÈÕÆÚĞÍ×ª»»³É×Ö·û´® ²ÎÊı£ºtime£¬Date pattern, String, ×ª»»µÄÄ¿±ê¸ñÊ½
      */
     public static String date2TimeStr(Date time, String pattern)
     {
@@ -952,7 +952,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­ä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰
+     * ÅĞ¶ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàµÈ
      */
     public static boolean isEq(String str, String other)
     {
@@ -964,7 +964,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­ä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ä¸ç›¸ç­‰
+     * ÅĞ¶ÏÁ½¸ö×Ö·û´®ÊÇ·ñ²»ÏàµÈ
      */
     public static boolean isNotEq(String str, String other)
     {
@@ -972,7 +972,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²å’Œæ•´æ•°æ˜¯å¦åœ¨å­—ç¬¦ä¸²ä¸Šç›¸ç­‰
+     * ÅĞ¶Ï×Ö·û´®ºÍÕûÊıÊÇ·ñÔÚ×Ö·û´®ÉÏÏàµÈ
      */
     public static boolean isEq(String str, int other)
     {
@@ -980,7 +980,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²å’Œæ•´æ•°æ˜¯å¦åœ¨å­—ç¬¦ä¸²ä¸Šä¸ç›¸ç­‰
+     * ÅĞ¶Ï×Ö·û´®ºÍÕûÊıÊÇ·ñÔÚ×Ö·û´®ÉÏ²»ÏàµÈ
      */
     public static boolean isNotEq(String str, int other)
     {
@@ -988,7 +988,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²å’Œæ•´æ•°æ˜¯å¦åœ¨å­—ç¬¦ä¸²ä¸Šç›¸ç­‰
+     * ÅĞ¶Ï×Ö·û´®ºÍÕûÊıÊÇ·ñÔÚ×Ö·û´®ÉÏÏàµÈ
      */
     public static boolean isEq(int i, String str)
     {
@@ -996,7 +996,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²å’Œæ•´æ•°æ˜¯å¦åœ¨å­—ç¬¦ä¸²ä¸Šä¸ç›¸ç­‰
+     * ÅĞ¶Ï×Ö·û´®ºÍÕûÊıÊÇ·ñÔÚ×Ö·û´®ÉÏ²»ÏàµÈ
      */
     public static boolean isNotEq(int i, String str)
     {
@@ -1004,7 +1004,7 @@ public class StringTools
     }
 
     /**
-     * åˆ¤æ–­è¯¥å­—ç¬¦ä¸²æ˜¯å¦ä¸åé¢æŸä¸ªæ•´å‹å‚æ•°åœ¨å­—ç¬¦ä¸²ä¸Šç›¸ç­‰
+     * ÅĞ¶Ï¸Ã×Ö·û´®ÊÇ·ñÓëºóÃæÄ³¸öÕûĞÍ²ÎÊıÔÚ×Ö·û´®ÉÏÏàµÈ
      */
     public static boolean matchs(String base, int... matched)
     {
@@ -1061,12 +1061,12 @@ public class StringTools
     
     /**
      * 
-     * æ ¹æ®å­—ç¬¦ä¸²å­—èŠ‚æ•°æˆªå–å­—ç¬¦ä¸²
+     * ¸ù¾İ×Ö·û´®×Ö½ÚÊı½ØÈ¡×Ö·û´®
      * 
      * @param str
-     * @param len éœ€è¦æˆªå–çš„å­—èŠ‚æ•°ï¼Œæ­¤å¤„ä¸€ä¸ªä¸­æ–‡æŒ‰å ç”¨2ä¸ªå­—èŠ‚
+     * @param len ĞèÒª½ØÈ¡µÄ×Ö½ÚÊı£¬´Ë´¦Ò»¸öÖĞÎÄ°´Õ¼ÓÃ2¸ö×Ö½Ú
      * @return
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static String getStringByByte(String str, int len)
     {
@@ -1101,7 +1101,7 @@ public class StringTools
     
     
     /**
-     * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦æ˜¯11ä½æ‰‹æœºå·æ•°å­—
+     * ÅĞ¶Ï×Ö·û´®ÊÇ·ñÊÇ11Î»ÊÖ»úºÅÊı×Ö
      */
     public static boolean isMsisdn(String str)
     {
@@ -1109,10 +1109,10 @@ public class StringTools
     }
     
     /**
-     * éªŒè¯è¾“å…¥çš„é‚®ç®±æ ¼å¼æ˜¯å¦ç¬¦åˆ
+     * ÑéÖ¤ÊäÈëµÄÓÊÏä¸ñÊ½ÊÇ·ñ·ûºÏ
      * 
      * @param email
-     * @return æ˜¯å¦åˆæ³•
+     * @return ÊÇ·ñºÏ·¨
      */  
     public static boolean isEmail(String email){  
         boolean tag = true;  
@@ -1127,8 +1127,8 @@ public class StringTools
       
     /**
      * 
-     * @param length é•¿åº¦
-     * @param type ç±»å‹ 1:æ•°å­— 2:å­—æ¯ 3:æ•°å­—å’Œå­—æ¯ç»„åˆ
+     * @param length ³¤¶È
+     * @param type ÀàĞÍ 1:Êı×Ö 2:×ÖÄ¸ 3:Êı×ÖºÍ×ÖÄ¸×éºÏ
      * @return
      */
     public static String getCharAndNumr(int length, Object ... type)     
@@ -1160,13 +1160,13 @@ public class StringTools
 	}   
     
     /**
-     * ã€€è·å–5ä½éšæœºæ•° <åŠŸèƒ½è¯¦ç»†æè¿°>
+     * ¡¡»ñÈ¡5Î»Ëæ»úÊı <¹¦ÄÜÏêÏ¸ÃèÊö>
      * 
-     * @return [å‚æ•°è¯´æ˜]
+     * @return [²ÎÊıËµÃ÷]
      * 
-     * @return int [è¿”å›ç±»å‹è¯´æ˜]
-     * @exception throws [è¿ä¾‹ç±»å‹] [è¿ä¾‹è¯´æ˜]
-     * @see [ç±»ã€ç±»#æ–¹æ³•ã€ç±»#æˆå‘˜]
+     * @return int [·µ»ØÀàĞÍËµÃ÷]
+     * @exception throws [Î¥ÀıÀàĞÍ] [Î¥ÀıËµÃ÷]
+     * @see [Àà¡¢Àà#·½·¨¡¢Àà#³ÉÔ±]
      */
     public static int getFiveRandomNumerical()
     {
