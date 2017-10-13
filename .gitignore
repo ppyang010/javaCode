@@ -44,3 +44,6 @@ gen/
 .idea/dictionaries/myj.xml  
 .idea/
 /mywaptest/mywaptest.iml
+/MyServer/target/
+/MyServer/MyServer.iml
+/MyServer/src/main/main.iml

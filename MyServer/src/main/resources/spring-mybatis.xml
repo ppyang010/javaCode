@@ -23,7 +23,7 @@
         </property>
         <property name="fileEncoding" value="utf-8" />
     </bean>
-    <!--获取bean就是Properties类型 可以使用getProperty 方法获取value-->
+    <!--获取bean就是Properties类型 可以使用getProperty 方法获取value 但是不能用${} 和@Value 方式-->
     <bean id="propertiesFactoryBean"
           class="org.springframework.beans.factory.config.PropertiesFactoryBean">
         <property name="locations">
